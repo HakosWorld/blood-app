@@ -1,0 +1,119 @@
+/* Reset some default styles */
+body,
+form {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set background color and center the content */
+body {
+  text-align: center;
+  background-color: #fff2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Style the container */
+.container {
+  text-align: center; /* Center the content */
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  margin: 0 auto; /* Center the container horizontally */
+  width: 700px; /* Add a width for larger screens */
+}
+
+/* Style headings */
+h2 {
+  text-align: center;
+}
+
+/* Style form labels */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.campaign-button {
+  display: block; /* Display the buttons vertically */
+  margin: 10px 0; /* Increase the padding between buttons */
+  padding: 10px 20px;
+  border: none;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  width: 100%; /* Make the buttons as wide as the container */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.campaign-button:hover {
+  background-color: #dcdcdc; /* Change the background color on hover */
+}
+
+/* Style form submit button */
+input[type="submit"] {
+  background-color: #51ff00;
+  color: #ffffff;
+  border: 10px;
+  padding: 10px 20px;
+  text-align: center;
+  margin: 20px auto 0; /* Center the button horizontally and add padding from below */
+  display: block; /* Display the button as a block element */
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Style error messages */
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+/* Style date and time selection box */
+.date-time-box {
+  display: flex; /* Display the date and time side by side */
+  justify-content: space-evenly;
+  align-items: center;
+  border: 2px solid #000000;
+  padding: 10px;
+  border-radius: 5px;
+  width: 80%; /* Adjust the width as needed */
+  margin: 20px auto; /* Center the box horizontally and add padding from below */
+}
+
+.date-time-box label {
+  width: 100%; /* Adjust the width of each label */
+}
+
+.date-time-box select {
+  width: 100%; /* Adjust the width of each select element */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+  .container {
+    width: 100%; /* Adjust the minimum width for smaller screens */
+    min-height: 500px; /* Adjust the minimum height for smaller screens */
+    padding: 105px; /* Adjust the padding for smaller screens */
+  }
+}
+
+/* Media query for larger screens */
+@media (min-width: 1200px) {
+  .container {
+    width: 40%; /* Adjust the maximum width for larger screens */
+  }
+}

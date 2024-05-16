@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff2f2;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #000000;
+    text-align: center;
+  }
+
+  h2 {
+    color: #000000;
+    text-align: center;
+  }
+  
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  
+  input[type="file"] {
+    margin-bottom: 10px;
+  }
+  
+  
+  input[type="radio"] {
+    margin-right: 5px;
+    
+  }
+
+  .gender-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 10px;
+    text-align: center;
+
+  }
+  
+  input[type="radio"] {
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  
+  
+  input[type="submit"] {
+    background-color: #51ff00;
+    color: #ffffff;
+    border: 10px;
+    width: 100%;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #347105;
+  }
+  
+  .error-message {
+    color: #ff0000;
+    margin-top: 5px;
+  }
+  table {
+    width: 80%;
+    min-height: 200px;
+    border-collapse: collapse;
+    background-color: #f4ecec;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    margin: auto;
+  }
+  
+  /* Style table headers */
+  th {
+    background-color: #b2aeae;
+    text-align: left;
+   
+  }
+  
+  /* Style table cells */
+  td {
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  /* Alternate row background color */
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Hover effect on rows */
+  tr:hover {
+    background-color: #e8e8e8;
+  }
+  
+  /* Style the select dropdown */
+  select {
+    padding: 5px;
+  }

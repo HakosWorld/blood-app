@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Approve users</title>
+  <link rel="stylesheet" type="text/css" href="approve.css">
+</head>
+<body>
+  <h1>Admin Panel</h1>
+  <div class="container">
+  <h2>User Data</h2>
+  <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Password</th>
+        <th>CPR</th>
+        <th>CPR Attachment</th>
+        <th>Email</th>
+        <th>Blood Type</th>
+        <th>Gender</th>
+        <th>Approval Status</th>
+        <th>Status</th>
+        
+      </tr>
+      <?php foreach ($users as $user): ?>
+        <tr>
+          <td><?php echo $user['id']; ?></td>
+          <td><?php echo $user['name']; ?></td>
+          <td><?php echo $user['password']; ?></td>
+          <td><?php echo $user['cpr']; ?></td>
+          <td><?php echo $user['cpr_attachment']; ?></td>
+          <td><?php echo $user['email']; ?></td>
+          <td><?php echo $user['blood_type']; ?></td>
+          <td><?php echo $user['gender']; ?></td>
+          <td>
+            <select name="approval_status_<?php echo $user['id']; ?>">
+              <option value="pending" <?php if ($user['approval_status'] === 'pending') echo 'selected'; ?>>Pending</option>
+              <option value="approved" <?php if ($user['approval_status'] === 'approved') echo 'selected'; ?>>Approved</option>
+              <option value="rejected" <?php if ($user['approval_status'] === 'rejected') echo 'selected'; ?>>Rejected</option>
+            </select>
+          </td>
+          
+          <td><?php echo $user['approval_status']; ?></td>
+        </tr>
+      <?php endforeach; ?>
+    </table>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</body>
+</html>
